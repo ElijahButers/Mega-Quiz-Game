@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelQuestion: UILabel!
     @IBOutlet weak var labelFeedback: UILabel!
     
-    
+    var allEntries: NSArray!
+    var currentCorrectAnswerIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
