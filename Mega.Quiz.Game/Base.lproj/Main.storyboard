@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" patternImage="C8864F8C-ACFF-4397-8247-F7D8E2F62819" colorSpace="pattern"/>
+                                    <color key="titleShadowColor" patternImage="1A6A7852-77FD-4273-8992-8F613D4B5ED7" colorSpace="pattern"/>
                                 </state>
                                 <connections>
                                     <segue destination="JwN-Xk-tJU" kind="modal" id="en6-vp-rkY"/>
@@ -55,6 +55,9 @@
                                 <state key="normal" title="Answer A">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedButtonA:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="wkO-PS-PgX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voS-8x-4YA">
                                 <rect key="frame" x="209" y="260" width="182" height="30"/>
@@ -63,6 +66,9 @@
                                 <state key="normal" title="Answer B">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedButtonB:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="AvA-af-VnV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-77-btj">
                                 <rect key="frame" x="209" y="319" width="182" height="30"/>
@@ -71,6 +77,9 @@
                                 <state key="normal" title="Answer C">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="presedButtonC:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="FUR-dI-1uS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eP-as-Ogh">
                                 <rect key="frame" x="209" y="429" width="99" height="30"/>
@@ -79,6 +88,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedButtonNext:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="l02-WC-0XM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohy-rh-J5T">
                                 <rect key="frame" x="209" y="116" width="182" height="21"/>
@@ -99,6 +111,9 @@
                                 <state key="normal" title="Answer D">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedButtonD:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="aL7-vm-JgT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,7 +135,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="C8864F8C-ACFF-4397-8247-F7D8E2F62819" width="256" height="256">
+        <image name="1A6A7852-77FD-4273-8992-8F613D4B5ED7" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

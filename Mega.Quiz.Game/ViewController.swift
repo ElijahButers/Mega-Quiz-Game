@@ -30,7 +30,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // Actions
 
+    @IBAction func pressedButtonA(sender: AnyObject) {
+    }
 
+    @IBAction func pressedButtonB(sender: UIButton) {
+    }
+    
+    @IBAction func presedButtonC(sender: AnyObject) {
+    }
+    
+    @IBAction func pressedButtonD(sender: AnyObject) {
+    }
+    
+    @IBAction func pressedButtonNext(sender: AnyObject) {
+    }
 }
 
