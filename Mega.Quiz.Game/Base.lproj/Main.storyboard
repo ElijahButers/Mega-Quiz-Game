@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mega_Quiz_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" patternImage="18CAED4B-018C-439E-9045-762FE5501564" colorSpace="pattern"/>
+                                    <color key="titleShadowColor" patternImage="C8864F8C-ACFF-4397-8247-F7D8E2F62819" colorSpace="pattern"/>
                                 </state>
                                 <connections>
                                     <segue destination="JwN-Xk-tJU" kind="modal" id="en6-vp-rkY"/>
@@ -39,7 +39,7 @@
         <!--View Controller-->
         <scene sceneID="tkf-9w-xUo">
             <objects>
-                <viewController id="JwN-Xk-tJU" sceneMemberID="viewController">
+                <viewController id="JwN-Xk-tJU" customClass="ViewController" customModule="Mega_Quiz_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SmO-YE-Kme"/>
                         <viewControllerLayoutGuide type="bottom" id="ygg-EN-rGQ"/>
@@ -72,14 +72,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ya-YR-KRH">
-                                <rect key="frame" x="209" y="376" width="182" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Answer D">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eP-as-Ogh">
                                 <rect key="frame" x="209" y="429" width="99" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,18 +92,35 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ya-YR-KRH">
+                                <rect key="frame" x="209" y="376" width="182" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Answer D">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XTF-65-bHo"/>
+                    <connections>
+                        <outlet property="buttonA" destination="4gn-wf-pIF" id="8Gw-cM-O1z"/>
+                        <outlet property="buttonB" destination="voS-8x-4YA" id="200-Yu-CbU"/>
+                        <outlet property="buttonC" destination="HrG-77-btj" id="zlx-YZ-Z5n"/>
+                        <outlet property="buttonD" destination="2Ya-YR-KRH" id="v85-1R-HeD"/>
+                        <outlet property="buttonNext" destination="5eP-as-Ogh" id="fqX-fM-d3o"/>
+                        <outlet property="labelFeedback" destination="yBS-pV-exe" id="Mey-LT-WzO"/>
+                        <outlet property="labelQuestion" destination="ohy-rh-J5T" id="G8I-4g-13S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onj-YQ-rGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="461"/>
+            <point key="canvasLocation" x="1188" y="461"/>
         </scene>
     </scenes>
     <resources>
-        <image name="18CAED4B-018C-439E-9045-762FE5501564" width="256" height="256">
+        <image name="C8864F8C-ACFF-4397-8247-F7D8E2F62819" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
