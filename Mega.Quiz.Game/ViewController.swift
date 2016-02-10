@@ -32,6 +32,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadQuestion(index: Int) {
+        
+        let entry: NSDictionary = allEntries.objectAtIndex(index) as! NSDictionary
+        let question: NSString = entry.objectForKey(index) as! NSString
+        let err: NSMutableArray = entry.objectForKey(index) as! NSMutableArray
+        
+        print(question)
+        print(err)
+    }
+    
     // Actions
 
     @IBAction func pressedButtonA(sender: AnyObject) {
