@@ -156,6 +156,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressedButtonNext(sender: AnyObject) {
+        
+        let randomNumber = Int(arc4random_uniform(UInt32(allEntries.count)))
+        loadQuestion(randomNumber)
     }
 }
 
