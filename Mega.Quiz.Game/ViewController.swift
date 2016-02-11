@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        loadAllQuestionsAndAnswers()
+        loadQuestion(1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +58,8 @@ class ViewController: UIViewController {
         
         print(question)
         print(err)
+        
+        labelQuestion.text = question as String
     }
     
     // Actions
