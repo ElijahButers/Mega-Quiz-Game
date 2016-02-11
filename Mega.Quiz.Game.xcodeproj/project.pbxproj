@@ -12,6 +12,7 @@
 		E2F379FA1C6A23A800A0269B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F379F81C6A23A800A0269B /* Main.storyboard */; };
 		E2F379FC1C6A23A800A0269B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F379FB1C6A23A800A0269B /* Assets.xcassets */; };
 		E2F379FF1C6A23A800A0269B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F379FD1C6A23A800A0269B /* LaunchScreen.storyboard */; };
+		E2F8002B1C6CBED800DDAB24 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = E2F8002A1C6CBED800DDAB24 /* content.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E2F379FB1C6A23A800A0269B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F379FE1C6A23A800A0269B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F37A001C6A23A800A0269B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F8002A1C6CBED800DDAB24 /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = content.json; path = ../content.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				E2F379FB1C6A23A800A0269B /* Assets.xcassets */,
 				E2F379FD1C6A23A800A0269B /* LaunchScreen.storyboard */,
 				E2F37A001C6A23A800A0269B /* Info.plist */,
+				E2F8002A1C6CBED800DDAB24 /* content.json */,
 			);
 			path = Mega.Quiz.Game;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 				E2F379FF1C6A23A800A0269B /* LaunchScreen.storyboard in Resources */,
 				E2F379FC1C6A23A800A0269B /* Assets.xcassets in Resources */,
 				E2F379FA1C6A23A800A0269B /* Main.storyboard in Resources */,
+				E2F8002B1C6CBED800DDAB24 /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 				E2F37A051C6A23A800A0269B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

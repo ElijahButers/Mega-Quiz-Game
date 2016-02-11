@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "question": "Where does Santa Claus live?",
+    "answers": [
+      "North Pole",
+      "South Pole",
+      "Alaska",
+      "Australia"
+    ],
+    "difficulty": "1"
+  },
+  {
+    "id": "1",
+    "question": "How does Santa get into a house on Christmass Eve?",
+    "answers": [
+      "Chimney",
+      "Front Door",
+      "Window",
+      "Dog Door"
+    ],
+    "difficulty": "1"
+  }
+]
