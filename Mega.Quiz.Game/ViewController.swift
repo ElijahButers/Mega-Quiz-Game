@@ -32,6 +32,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadAllQuestionsAndAnswers() {
+        
+        let path = NSBundle.mainBundle().pathForResource("content", ofType: "json")
+        let jsonData: NSData = NSData(contentsOfFile: path!)!
+        
+        
+        do {
+            
+            allEntries = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+        } catch {
+            print(allEntries)
+        }
+        print(allEntries)
+    }
+    
     func loadQuestion(index: Int) {
         
         let entry: NSDictionary = allEntries.objectAtIndex(index) as! NSDictionary

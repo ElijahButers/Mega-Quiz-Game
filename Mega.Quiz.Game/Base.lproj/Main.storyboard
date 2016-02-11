@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" patternImage="1A6A7852-77FD-4273-8992-8F613D4B5ED7" colorSpace="pattern"/>
+                                    <color key="titleShadowColor" patternImage="1E9E764D-B209-47CF-9669-296712167E3C" colorSpace="pattern"/>
                                 </state>
                                 <connections>
                                     <segue destination="JwN-Xk-tJU" kind="modal" id="en6-vp-rkY"/>
@@ -135,7 +135,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1A6A7852-77FD-4273-8992-8F613D4B5ED7" width="256" height="256">
+        <image name="1E9E764D-B209-47CF-9669-296712167E3C" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
