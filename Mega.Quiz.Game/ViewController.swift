@@ -60,6 +60,23 @@ class ViewController: UIViewController {
         print(err)
         
         labelQuestion.text = question as String
+        
+        
+    }
+    
+    // Shuffle method
+    
+    func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
+        
+        let count = list.count
+        for i in 0..<(count - 1) {
+            
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            guard i != j else { continue }
+            swap(&list[i], &list[i])
+        }
+        
+        return list
     }
     
     // Actions
