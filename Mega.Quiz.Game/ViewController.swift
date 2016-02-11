@@ -54,14 +54,43 @@ class ViewController: UIViewController {
         
         let entry: NSDictionary = allEntries.objectAtIndex(index) as! NSDictionary
         let question: NSString = entry.objectForKey(index) as! NSString
-        let err: NSMutableArray = entry.objectForKey(index) as! NSMutableArray
+        let arr: NSMutableArray = entry.objectForKey(index) as! NSMutableArray
         
         print(question)
-        print(err)
+        print(arr)
         
         labelQuestion.text = question as String
         
-        
+        let indices: [Int] = [0, 1, 2, 3]
+        let newSequence = shuffle(indices)
+        var i: Int = 0
+        for (i = 0; i < newSequence.count; i++) {
+            
+            let index = newSequence[i]
+            if (index == 0) {
+                
+                currentCorrectAnswerIndex = i
+            }
+            
+            let answer = arr.objectAtIndex(index) as! NSString
+            switch(i) {
+                
+            case 0:
+                buttonA.setTitle(answer as String, forState: .Normal)
+                break;
+            case 1:
+                buttonB.setTitle(answer as String, forState: .Normal)
+                break;
+            case 2:
+                buttonC.setTitle(answer as String, forState: .Normal)
+                break;
+            case 3:
+                buttonD.setTitle(answer as String, forState: .Normal)
+                break;
+            default:
+                break;
+            }
+        }
     }
     
     // Shuffle method
