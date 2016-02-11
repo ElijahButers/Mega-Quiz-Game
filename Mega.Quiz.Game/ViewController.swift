@@ -53,8 +53,8 @@ class ViewController: UIViewController {
     func loadQuestion(index: Int) {
         
         let entry: NSDictionary = allEntries.objectAtIndex(index) as! NSDictionary
-        let question: NSString = entry.objectForKey(index) as! NSString
-        let arr: NSMutableArray = entry.objectForKey(index) as! NSMutableArray
+        let question: NSString = entry.objectForKey("question") as! NSString
+        let arr: NSMutableArray = entry.objectForKey("answers") as! NSMutableArray
         
         print(question)
         print(arr)
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
             
             let j = Int(arc4random_uniform(UInt32(count - i))) + i
             guard i != j else { continue }
-            swap(&list[i], &list[i])
+            swap(&list[i], &list[j])
         }
         
         return list
