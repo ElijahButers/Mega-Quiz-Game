@@ -108,6 +108,24 @@ class ViewController: UIViewController {
         return list
     }
     
+    // Check answer method
+    
+    func checkAnswer(let answerNumber: Int) {
+        
+        if(answerNumber == currentCorrectAnswerIndex) {
+            
+            labelFeedback.text = "Correct!"
+            labelFeedback.textColor = UIColor.greenColor()
+            
+        } else {
+            labelFeedback.text = "Wrong Answer"
+            labelFeedback.textColor = UIColor.redColor()
+        }
+        
+        buttonNext.enabled = true
+        buttonNext.enabled = false
+    }
+    
     // Actions
 
     @IBAction func pressedButtonA(sender: AnyObject) {
