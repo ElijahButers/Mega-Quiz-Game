@@ -91,7 +91,10 @@ class ViewController: UIViewController {
                 break;
             }
         }
+        
+        resetAnswerButtons()
     }
+    
     
     // Shuffle method
     
@@ -124,6 +127,21 @@ class ViewController: UIViewController {
         
         buttonNext.enabled = true
         buttonNext.enabled = false
+    }
+    
+    // Reset answer buttons
+    
+    func resetAnswerButtons() {
+        
+        buttonA.alpha = 1.0
+        buttonB.alpha = 1.0
+        buttonC.alpha = 1.0
+        buttonD.alpha = 1.0
+        
+        buttonA.enabled = true
+        buttonB.enabled = true
+        buttonC.enabled = true
+        buttonD.enabled = true
     }
     
     // Actions
