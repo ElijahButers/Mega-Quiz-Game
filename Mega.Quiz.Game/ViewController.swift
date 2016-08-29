@@ -50,11 +50,11 @@ class ViewController: UIViewController {
         print(allEntries)
     }
     
-    func loadQuestion(index: Int) {
+    func loadQuestion(_ index: Int) {
         
-        let entry: NSDictionary = allEntries.objectAtIndex(index) as! NSDictionary
-        let question: NSString = entry.objectForKey("question") as! NSString
-        let arr: NSMutableArray = entry.objectForKey("answers") as! NSMutableArray
+        let entry: NSDictionary = allEntries.object(at: index) as! NSDictionary
+        let question: NSString = entry.object(forKey:"question") as! NSString
+        let arr: NSMutableArray = entry.object(forKey:"answers") as! NSMutableArray
         
         print(question)
         print(arr)
@@ -76,16 +76,16 @@ class ViewController: UIViewController {
             switch(i) {
                 
             case 0:
-                buttonA.setTitle(answer as String, forState: .Normal)
+                buttonA.setTitle(answer as String, forState: UIControState())
                 break;
             case 1:
-                buttonB.setTitle(answer as String, forState: .Normal)
+                buttonB.setTitle(answer as String, forState: UIControState())
                 break;
             case 2:
-                buttonC.setTitle(answer as String, forState: .Normal)
+                buttonC.setTitle(answer as String, forState: UIControState())
                 break;
             case 3:
-                buttonD.setTitle(answer as String, forState: .Normal)
+                buttonD.setTitle(answer as String, forState: UIControState())
                 break;
             default:
                 break;
