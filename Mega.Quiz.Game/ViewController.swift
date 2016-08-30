@@ -113,16 +113,16 @@ class ViewController: UIViewController {
     
     // Check answer method
     
-    func checkAnswer(let answerNumber: Int) {
+    func checkAnswer(_ answerNumber: Int) {
         
         if(answerNumber == currentCorrectAnswerIndex) {
             
             labelFeedback.text = "Correct!"
-            labelFeedback.textColor = UIColor.greenColor()
+            labelFeedback.textColor = UIColor.green
             
         } else {
             labelFeedback.text = "Wrong Answer"
-            labelFeedback.textColor = UIColor.redColor()
+            labelFeedback.textColor = UIColor.red
         }
         
         buttonNext.enabled = true
