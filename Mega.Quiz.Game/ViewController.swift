@@ -138,10 +138,10 @@ class ViewController: UIViewController {
         buttonC.alpha = 1.0
         buttonD.alpha = 1.0
         
-        buttonA.enabled = true
-        buttonB.enabled = true
-        buttonC.enabled = true
-        buttonD.enabled = true
+        buttonA.isEnabled = true
+        buttonB.isEnabled = true
+        buttonC.isEnabled = true
+        buttonD.isEnabled = true
     }
     
     // Actions
