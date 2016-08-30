@@ -201,7 +201,7 @@ class ViewController: UIViewController {
         buttonD.isEnabled = false
     }
     
-    @IBAction func pressedButtonNext(sender: AnyObject) {
+    @IBAction func pressedButtonNext(_ sender: AnyObject) {
         
         let randomNumber = Int(arc4random_uniform(UInt32(allEntries.count)))
         loadQuestion(randomNumber)
