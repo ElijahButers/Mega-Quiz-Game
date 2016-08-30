@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         let indices: [Int] = [0, 1, 2, 3]
         let newSequence = shuffle(indices)
         var i: Int = 0
-        for (i = 0; i < newSequence.count; i++) {
+        for i in (0..<newSequence.count) {
             
             let index = newSequence[i]
             if (index == 0) {
@@ -98,20 +98,20 @@ class ViewController: UIViewController {
                 currentCorrectAnswerIndex = i
             }
             
-            let answer = arr.objectAtIndex(index) as! NSString
+            let answer = arr.object(at: index) as! NSString
             switch(i) {
                 
             case 0:
-                buttonA.setTitle(answer as String, forState: UIControState())
+                buttonA.setTitle(answer as String, for: UIControState())
                 break;
             case 1:
-                buttonB.setTitle(answer as String, forState: UIControState())
+                buttonB.setTitle(answer as String, for: UIControState())
                 break;
             case 2:
-                buttonC.setTitle(answer as String, forState: UIControState())
+                buttonC.setTitle(answer as String, for: UIControState())
                 break;
             case 3:
-                buttonD.setTitle(answer as String, forState: UIControState())
+                buttonD.setTitle(answer as String, for: UIControState())
                 break;
             default:
                 break;
