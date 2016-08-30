@@ -64,12 +64,12 @@ class ViewController: UIViewController {
     func loadAllQuestionsAndAnswers() {
         
         let path = Bundle.main.path(forResource: "content", ofType: "json")
-        let jsonData: Data = try? Data(contentsOf: URL(fileURLWothPath: path!))
+        let jsonData: Data = try! Data(contentsOf: URL(fileURLWithPath: path!))
         
         
         do {
             
-            allEntries = try JSONSerialization.jsonObjectWithData(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
+            allEntries = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
         } catch {
             print(allEntries)
         }
@@ -88,8 +88,8 @@ class ViewController: UIViewController {
         labelQuestion.text = question as String
         
         let indices: [Int] = [0, 1, 2, 3]
-        let newSequence = shuffle(indices)
-        var i: Int = 0
+        let newSequence = indices.shuffled()
+        
         for i in (0..<newSequence.count) {
             
             let index = newSequence[i]
@@ -102,16 +102,16 @@ class ViewController: UIViewController {
             switch(i) {
                 
             case 0:
-                buttonA.setTitle(answer as String, for: UIControState())
+                buttonA.setTitle(answer as String, for: UIControlState())
                 break;
             case 1:
-                buttonB.setTitle(answer as String, for: UIControState())
+                buttonB.setTitle(answer as String, for: UIControlState())
                 break;
             case 2:
-                buttonC.setTitle(answer as String, for: UIControState())
+                buttonC.setTitle(answer as String, for: UIControlState())
                 break;
             case 3:
-                buttonD.setTitle(answer as String, for: UIControState())
+                buttonD.setTitle(answer as String, for: UIControlState())
                 break;
             default:
                 break;
