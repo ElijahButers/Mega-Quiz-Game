@@ -146,49 +146,49 @@ class ViewController: UIViewController {
     
     // Actions
 
-    @IBAction func pressedButtonA(sender: AnyObject) {
+    @IBAction func pressedButtonA(_ sender: AnyObject) {
         buttonA.alpha = 0.3
         buttonB.alpha = 0.3
         buttonC.alpha = 0.3
         buttonD.alpha = 0.3
         
-        buttonA.enabled = false
-        buttonB.enabled = false
-        buttonC.enabled = false
-        buttonD.enabled = false
+        buttonA.isEnabled = false
+        buttonB.isEnabled = false
+        buttonC.isEnabled = false
+        buttonD.isEnabled = false
     }
 
-    @IBAction func pressedButtonB(sender: UIButton) {
+    @IBAction func pressedButtonB(_ sender: UIButton) {
         buttonA.alpha = 0.3
         buttonC.alpha = 0.3
         buttonD.alpha = 0.3
         
-        buttonA.enabled = false
-        buttonB.enabled = false
-        buttonC.enabled = false
-        buttonD.enabled = false
+        buttonA.isEnabled = false
+        buttonB.isEnabled = false
+        buttonC.isEnabled = false
+        buttonD.isEnabled = false
     }
     
-    @IBAction func presedButtonC(sender: AnyObject) {
+    @IBAction func presedButtonC(_ sender: AnyObject) {
         buttonA.alpha = 0.3
         buttonB.alpha = 0.3
         buttonD.alpha = 0.3
         
-        buttonA.enabled = false
-        buttonB.enabled = false
-        buttonC.enabled = false
-        buttonD.enabled = false
+        buttonA.isEnabled = false
+        buttonB.isEnabled = false
+        buttonC.isEnabled = false
+        buttonD.isEnabled = false
     }
     
-    @IBAction func pressedButtonD(sender: AnyObject) {
+    @IBAction func pressedButtonD(_ sender: AnyObject) {
         buttonA.alpha = 0.3
         buttonB.alpha = 0.3
         buttonC.alpha = 0.3
         
-        buttonA.enabled = false
-        buttonB.enabled = false
-        buttonC.enabled = false
-        buttonD.enabled = false
+        buttonA.isEnabled = false
+        buttonB.isEnabled = false
+        buttonC.isEnabled = false
+        buttonD.isEnabled = false
     }
     
     @IBAction func pressedButtonNext(sender: AnyObject) {
