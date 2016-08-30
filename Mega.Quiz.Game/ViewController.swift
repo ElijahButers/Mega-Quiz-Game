@@ -125,8 +125,8 @@ class ViewController: UIViewController {
             labelFeedback.textColor = UIColor.red
         }
         
-        buttonNext.enabled = true
-        buttonNext.enabled = false
+        buttonNext.isEnabled = true
+        buttonNext.isEnabled = false
     }
     
     // Reset answer buttons
