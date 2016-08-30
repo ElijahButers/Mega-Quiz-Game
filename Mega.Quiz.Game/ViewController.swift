@@ -37,13 +37,13 @@ class ViewController: UIViewController {
     
     func loadAllQuestionsAndAnswers() {
         
-        let path = NSBundle.mainBundle().pathForResource("content", ofType: "json")
-        let jsonData: NSData = NSData(contentsOfFile: path!)!
+        let path = Bundle.main.path(forResource: "content", ofType: "json")
+        let jsonData: Data = try? Data(contentsOf: URL(fileURLWothPath: path!))
         
         
         do {
             
-            allEntries = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+            allEntries = try JSONSerialization.jsonObjectWithData(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
         } catch {
             print(allEntries)
         }
