@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" patternImage="8E4823EB-CB22-488B-8A3B-0C7A9879E1E8" colorSpace="pattern"/>
+                                    <color key="titleShadowColor" patternImage="E4C7450B-F8B5-4A6A-8A94-013EB20E4EC9" colorSpace="pattern"/>
                                 </state>
                                 <connections>
                                     <segue destination="JwN-Xk-tJU" kind="show" id="ub9-dz-oMy"/>
@@ -84,7 +84,7 @@
                                     <action selector="presedButtonC:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="FUR-dI-1uS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohy-rh-J5T">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohy-rh-J5T">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -163,7 +163,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="8E4823EB-CB22-488B-8A3B-0C7A9879E1E8" width="256" height="256">
+        <image name="E4C7450B-F8B5-4A6A-8A94-013EB20E4EC9" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
