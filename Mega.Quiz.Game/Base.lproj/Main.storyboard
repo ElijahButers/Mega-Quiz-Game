@@ -24,8 +24,11 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" patternImage="635F0715-E0F4-488C-B6BA-8B1DC5FBE7DF" colorSpace="pattern"/>
+                                    <color key="titleShadowColor" patternImage="38521D58-3E82-40B6-8307-B3A3EA45F866" colorSpace="pattern"/>
                                 </state>
+                                <connections>
+                                    <segue destination="JwN-Xk-tJU" kind="show" id="ub9-dz-oMy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -141,7 +144,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="635F0715-E0F4-488C-B6BA-8B1DC5FBE7DF" width="256" height="256">
+        <image name="38521D58-3E82-40B6-8307-B3A3EA45F866" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
