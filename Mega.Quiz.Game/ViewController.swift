@@ -123,6 +123,15 @@ class ViewController: UIViewController {
         resetAnswerButtons()
     }
     
+    // Score
+    
+    func loadScore() {
+        
+        let defaults = UserDefaults.standard
+        score = defaults.integer(forKey: "score")
+        labelScore.text = "score: \(score)"
+    }
+
     // Check answer method
     
     func checkAnswer(_ answerNumber: Int) {
