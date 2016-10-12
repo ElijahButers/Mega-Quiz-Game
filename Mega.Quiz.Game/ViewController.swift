@@ -137,7 +137,7 @@ class ViewController: UIViewController {
         }
         
         buttonNext.isEnabled = true
-        buttonNext.isEnabled = false
+        //buttonNext.isEnabled = false
     }
     
     // Reset answer buttons

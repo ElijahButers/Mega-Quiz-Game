@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -89,16 +90,7 @@
                                     <action selector="presedButtonC:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="FUR-dI-1uS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohy-rh-J5T">
-                                <frame key="frameInset" minX="69" minY="106" width="182" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBS-pV-exe">
-                                <frame key="frameInset" minX="121" minY="49" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBS-pV-exe">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -127,8 +119,31 @@
                                     <action selector="pressedButtonD:" destination="JwN-Xk-tJU" eventType="touchUpInside" id="aL7-vm-JgT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qu-Ha-MAS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="VsW-GS-YNr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohy-rh-J5T">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0qu-Ha-MAS" firstAttribute="leading" secondItem="9ZR-YK-3QQ" secondAttribute="leadingMargin" constant="32" id="0cY-tj-YZA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBS-pV-exe" secondAttribute="trailing" constant="32" id="40r-35-j81"/>
+                            <constraint firstItem="yBS-pV-exe" firstAttribute="trailing" secondItem="ohy-rh-J5T" secondAttribute="trailing" id="ADk-zv-bhB"/>
+                            <constraint firstItem="yBS-pV-exe" firstAttribute="baseline" secondItem="0qu-Ha-MAS" secondAttribute="baseline" id="FQi-yi-PNY"/>
+                            <constraint firstItem="yBS-pV-exe" firstAttribute="leading" secondItem="0qu-Ha-MAS" secondAttribute="trailing" constant="16" id="Hgg-V6-3KE"/>
+                            <constraint firstItem="ohy-rh-J5T" firstAttribute="top" secondItem="0qu-Ha-MAS" secondAttribute="bottom" constant="33" id="OU4-5F-9Aq"/>
+                            <constraint firstItem="0qu-Ha-MAS" firstAttribute="leading" secondItem="ohy-rh-J5T" secondAttribute="leading" id="ThW-UV-nTs"/>
+                            <constraint firstItem="0qu-Ha-MAS" firstAttribute="top" secondItem="SmO-YE-Kme" secondAttribute="bottom" constant="32" id="qJR-ys-VgU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XTF-65-bHo"/>
                     <connections>
