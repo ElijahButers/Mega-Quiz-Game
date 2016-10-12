@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         
         loadAllQuestionsAndAnswers()
         loadQuestion(1)
+        loadScore()
     }
 
     override func didReceiveMemoryWarning() {
