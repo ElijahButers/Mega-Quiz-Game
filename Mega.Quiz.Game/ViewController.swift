@@ -130,7 +130,7 @@ class ViewController: UIViewController {
             
             labelFeedback.text = "Correct!"
             labelFeedback.textColor = UIColor.green
-            
+            score = score + 1
         } else {
             labelFeedback.text = "Wrong Answer"
             labelFeedback.textColor = UIColor.red
