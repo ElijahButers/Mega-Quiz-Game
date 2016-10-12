@@ -44,6 +44,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelQuestion: UILabel!
     @IBOutlet weak var labelFeedback: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var allEntries: NSArray!
     var currentCorrectAnswerIndex: Int = 0

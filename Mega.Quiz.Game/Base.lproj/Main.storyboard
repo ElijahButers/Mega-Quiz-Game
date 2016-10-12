@@ -152,8 +152,9 @@
                         <outlet property="buttonC" destination="HrG-77-btj" id="zlx-YZ-Z5n"/>
                         <outlet property="buttonD" destination="2Ya-YR-KRH" id="v85-1R-HeD"/>
                         <outlet property="buttonNext" destination="5eP-as-Ogh" id="fqX-fM-d3o"/>
-                        <outlet property="labelFeedback" destination="yBS-pV-exe" id="Mey-LT-WzO"/>
+                        <outlet property="labelFeedback" destination="0qu-Ha-MAS" id="Rev-YJ-EaH"/>
                         <outlet property="labelQuestion" destination="ohy-rh-J5T" id="G8I-4g-13S"/>
+                        <outlet property="scoreLabel" destination="0qu-Ha-MAS" id="cYJ-2B-FJm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onj-YQ-rGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
