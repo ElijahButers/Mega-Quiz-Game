@@ -167,6 +167,8 @@ class ViewController: UIViewController {
         buttonB.isEnabled = false
         buttonC.isEnabled = false
         buttonD.isEnabled = false
+        
+        checkAnswer(0)
     }
 
     @IBAction func pressedButtonB(_ sender: UIButton) {
@@ -178,6 +180,8 @@ class ViewController: UIViewController {
         buttonB.isEnabled = false
         buttonC.isEnabled = false
         buttonD.isEnabled = false
+        
+        checkAnswer(1)
     }
     
     @IBAction func presedButtonC(_ sender: AnyObject) {
@@ -189,6 +193,8 @@ class ViewController: UIViewController {
         buttonB.isEnabled = false
         buttonC.isEnabled = false
         buttonD.isEnabled = false
+        
+        checkAnswer(2)
     }
     
     @IBAction func pressedButtonD(_ sender: AnyObject) {
@@ -200,6 +206,8 @@ class ViewController: UIViewController {
         buttonB.isEnabled = false
         buttonC.isEnabled = false
         buttonD.isEnabled = false
+        
+        checkAnswer(3)
     }
     
     @IBAction func pressedButtonNext(_ sender: AnyObject) {
