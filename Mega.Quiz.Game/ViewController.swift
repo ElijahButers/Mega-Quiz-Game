@@ -131,6 +131,12 @@ class ViewController: UIViewController {
         score = defaults.integer(forKey: "score")
         labelScore.text = "score: \(score)"
     }
+    
+    func saveScore() {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(score, forKey: "score")
+    }
 
     // Check answer method
     
