@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     
     var allEntries: NSArray!
     var currentCorrectAnswerIndex: Int = 0
+    var score: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
